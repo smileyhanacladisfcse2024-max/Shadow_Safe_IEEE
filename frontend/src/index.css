@@ -1,0 +1,52 @@
+@import '@fontsource/inter';
+@import '@fontsource/space-grotesk';
+@import '@fontsource/manrope';
+@import '@fontsource/jetbrains-mono';
+@import 'material-symbols/outlined.css';
+@import './styles/theme.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html,
+  body {
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(var(--c-background));
+    color: rgb(var(--c-on-surface));
+    font-family: var(--font-body);
+  }
+
+  body {
+    overscroll-behavior: none;
+    min-height: 100dvh;
+  }
+
+  .pb-safe {
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+  }
+
+  .pt-safe {
+    padding-top: env(safe-area-inset-top, 0px);
+  }
+
+  main > :first-child {
+    margin-top: 0 !important;
+  }
+
+  main > :last-child {
+    margin-bottom: 0 !important;
+  }
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+* {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

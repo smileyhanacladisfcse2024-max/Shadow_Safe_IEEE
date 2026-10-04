@@ -1,0 +1,25 @@
+{
+  "name": "shadowsafe-2.0",
+  "version": "2.0.0",
+  "description": "Zero-Knowledge Personal Safety & Autonomous Safe Corridor Routing Platform",
+  "type": "module",
+  "scripts": {
+    "dev": "node scripts/dev.mjs",
+    "build": "npm run --prefix frontend build",
+    "typecheck": "npm run --prefix frontend typecheck",
+    "lint": "npm run --prefix frontend lint",
+    "test": "npm run test:backend && npm run test:consistency",
+    "test:backend": "node -e \"const {spawnSync}=require('child_process'); const py = process.platform==='win32' ? (require('fs').existsSync('.venv/Scripts/python.exe') ? '.venv/Scripts/python.exe' : 'python') : (require('fs').existsSync('.venv/bin/python') ? '.venv/bin/python' : 'python3'); process.exit(spawnSync(py, ['-m', 'pytest', 'backend/tests', '-v'], {stdio: 'inherit'}).status);\"",
+    "test:consistency": "node -e \"const {spawnSync}=require('child_process'); const py = process.platform==='win32' ? (require('fs').existsSync('.venv/Scripts/python.exe') ? '.venv/Scripts/python.exe' : 'python') : (require('fs').existsSync('.venv/bin/python') ? '.venv/bin/python' : 'python3'); process.exit(spawnSync(py, ['scripts/consistency.py'], {stdio: 'inherit'}).status);\""
+  },
+  "keywords": [
+    "personal-safety",
+    "zero-knowledge",
+    "fastapi",
+    "react19",
+    "leaflet",
+    "autonomous-routing"
+  ],
+  "author": "ShadowSafe Engineering Team",
+  "license": "Apache-2.0"
+}

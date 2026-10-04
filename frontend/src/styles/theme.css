@@ -1,0 +1,167 @@
+/* Shared Design Tokens across all themes */
+:root {
+  /* Common static colors */
+  --c-background: 15 19 29;
+  --c-surface: 15 19 29;
+  --c-surface-dim: 15 19 29;
+  --c-surface-bright: 53 57 68;
+  --c-surface-variant: 49 53 64;
+  --c-surface-container-lowest: 10 14 24;
+  --c-surface-container-low: 23 27 38;
+  --c-surface-container: 28 31 42;
+  --c-surface-container-high: 38 42 53;
+  --c-surface-container-highest: 49 53 64;
+  --c-on-background: 223 226 241;
+  --c-on-surface: 223 226 241;
+  --c-on-surface-variant: 188 201 205;
+  --c-inverse-surface: 223 226 241;
+  --c-inverse-on-surface: 44 48 59;
+  --c-outline: 134 147 151;
+  --c-outline-variant: 61 73 76;
+  --c-surface-tint: 76 215 246;
+
+  --c-primary: 76 215 246;
+  --c-on-primary: 0 54 64;
+  --c-primary-container: 6 182 212;
+  --c-on-primary-container: 0 66 79;
+  --c-inverse-primary: 0 104 122;
+  --c-primary-fixed: 172 237 255;
+  --c-primary-fixed-dim: 76 215 246;
+  --c-on-primary-fixed: 0 31 38;
+  --c-on-primary-fixed-variant: 0 78 92;
+
+  --c-error: 255 180 171;
+  --c-on-error: 105 0 5;
+  --c-error-container: 147 0 10;
+  --c-on-error-container: 255 218 214;
+
+  /* Shared Spacing & Radii defaults (fallback to Theme A) */
+  --space-xs: 0.25rem;
+  --space-sm: 0.5rem;
+  --space-md: 0.75rem;
+  --space-lg: 1rem;
+  --space-xl: 1.5rem;
+  --space-2xl: 2rem;
+  --gutter: 1rem;
+  --gutter-sm: 0.75rem;
+  --margin: 1rem;
+  --margin-lg: 1.5rem;
+  --margin-tablet: 2rem;
+
+  --radius-default: 0.25rem;
+  --radius-lg: 0.5rem;
+  --radius-xl: 0.75rem;
+  --radius-full: 9999px;
+
+  /* Default Typography */
+  --font-headline: 'Inter', sans-serif;
+  --font-body: 'Inter', sans-serif;
+  --font-label: 'JetBrains Mono', monospace;
+
+  /* Default Theme A color fallbacks */
+  --c-secondary: 79 219 200;
+  --c-on-secondary: 0 55 49;
+  --c-secondary-container: 4 180 162;
+  --c-on-secondary-container: 0 63 56;
+  --c-secondary-fixed: 113 248 228;
+  --c-secondary-fixed-dim: 79 219 200;
+  --c-on-secondary-fixed: 0 32 28;
+  --c-on-secondary-fixed-variant: 0 80 72;
+
+  --c-tertiary: 255 185 95;
+  --c-on-tertiary: 71 42 0;
+  --c-tertiary-container: 231 148 0;
+  --c-on-tertiary-container: 86 52 0;
+  --c-tertiary-fixed: 255 221 184;
+  --c-tertiary-fixed-dim: 255 185 95;
+  --c-on-tertiary-fixed: 42 23 0;
+  --c-on-tertiary-fixed-variant: 101 62 0;
+}
+
+/* Theme A (Journey, Factors, Reroute, Privacy) */
+[data-theme="A"] {
+  --c-secondary: 79 219 200;
+  --c-on-secondary: 0 55 49;
+  --c-secondary-container: 4 180 162;
+  --c-on-secondary-container: 0 63 56;
+  --c-secondary-fixed: 113 248 228;
+  --c-secondary-fixed-dim: 79 219 200;
+  --c-on-secondary-fixed: 0 32 28;
+  --c-on-secondary-fixed-variant: 0 80 72;
+
+  --c-tertiary: 255 185 95;
+  --c-on-tertiary: 71 42 0;
+  --c-tertiary-container: 231 148 0;
+  --c-on-tertiary-container: 86 52 0;
+  --c-tertiary-fixed: 255 221 184;
+  --c-tertiary-fixed-dim: 255 185 95;
+  --c-on-tertiary-fixed: 42 23 0;
+  --c-on-tertiary-fixed-variant: 101 62 0;
+
+  /* Border Radius */
+  --radius-default: 0.25rem;
+  --radius-lg: 0.5rem;
+  --radius-xl: 0.75rem;
+
+  /* Spacing */
+  --space-xs: 0.25rem;
+  --space-sm: 0.5rem;
+  --space-md: 0.75rem;
+  --space-lg: 1rem;
+  --space-xl: 1.5rem;
+  --space-2xl: 2rem;
+  --gutter: 1rem;
+  --gutter-sm: 0.75rem;
+  --margin: 1rem;
+  --margin-lg: 1.5rem;
+  --margin-tablet: 2rem;
+
+  /* Typography */
+  --font-headline: 'Inter', sans-serif;
+  --font-body: 'Inter', sans-serif;
+  --font-label: 'JetBrains Mono', monospace;
+}
+
+/* Theme B (Guardians, Havens) */
+[data-theme="B"] {
+  --c-secondary: 173 198 255;
+  --c-on-secondary: 0 46 106;
+  --c-secondary-container: 5 102 217;
+  --c-on-secondary-container: 230 236 255;
+  --c-secondary-fixed: 216 226 255;
+  --c-secondary-fixed-dim: 173 198 255;
+  --c-on-secondary-fixed: 0 26 66;
+  --c-on-secondary-fixed-variant: 0 67 149;
+
+  --c-tertiary: 78 222 163;
+  --c-on-tertiary: 0 56 36;
+  --c-tertiary-container: 27 189 133;
+  --c-on-tertiary-container: 0 69 46;
+  --c-tertiary-fixed: 111 251 190;
+  --c-tertiary-fixed-dim: 78 222 163;
+  --c-on-tertiary-fixed: 0 33 19;
+  --c-on-tertiary-fixed-variant: 0 82 54;
+
+  /* Border Radius */
+  --radius-default: 1rem;
+  --radius-lg: 2rem;
+  --radius-xl: 3rem;
+
+  /* Spacing */
+  --space-xs: 0.25rem;
+  --space-sm: 0.5rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2.5rem;
+  --space-2xl: 2rem;
+  --gutter: 1rem;
+  --gutter-sm: 0.75rem;
+  --margin: 1rem;
+  --margin-lg: 1.5rem;
+  --margin-tablet: 2rem;
+
+  /* Typography */
+  --font-headline: 'Space Grotesk', sans-serif;
+  --font-body: 'Manrope', sans-serif;
+  --font-label: 'JetBrains Mono', monospace;
+}
